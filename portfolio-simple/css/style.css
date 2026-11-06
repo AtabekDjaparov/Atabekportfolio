@@ -1,6 +1,4 @@
-/* ===== Общие стили ===== */
 
-/* убираем стандартные отступы у всех элементов */
 * {
   margin: 0;
   padding: 0;
@@ -27,12 +25,10 @@ img {
   max-width: 100%;
 }
 
-/* чтобы шапка не закрывала заголовок, когда нажимаем на ссылку меню */
 section {
   scroll-margin-top: 70px;
 }
 
-/* рамка вокруг заголовков разделов */
 .section-title {
   display: inline-block;
   border: 8px solid #000;
@@ -44,7 +40,6 @@ section {
   text-transform: uppercase;
 }
 
-/* кнопка */
 .button {
   display: inline-block;
   padding: 12px 30px;
@@ -63,7 +58,6 @@ section {
 }
 
 
-/* ===== Шапка ===== */
 .header {
   position: fixed;
   top: 0;
@@ -113,7 +107,6 @@ section {
   color: black;
 }
 
-/* на компьютере кнопку-бургер не показываем */
 .menu-button {
   display: none;
   background: none;
@@ -124,7 +117,6 @@ section {
 }
 
 
-/* ===== Главный экран ===== */
 .hero {
   height: 100vh;
   min-height: 500px;
@@ -161,7 +153,6 @@ section {
 }
 
 
-/* ===== Обо мне ===== */
 .about {
   padding: 80px 20px;
   text-align: center;
@@ -173,7 +164,6 @@ section {
 }
 
 
-/* ===== Навыки ===== */
 .skills {
   padding: 80px 20px;
   background-color: #f2f2f2;
@@ -220,14 +210,12 @@ section {
 }
 
 
-/* ===== Портфолио ===== */
 .portfolio {
   padding-bottom: 80px;
   background-color: #1a1a1a;
   color: white;
 }
 
-/* полоса с горами сверху */
 .portfolio-top {
   height: 280px;
   background-image: url(../img/banner.png);
@@ -268,13 +256,11 @@ section {
   color: white;
 }
 
-/* активная кнопка фильтра */
 .filter-button.active {
   color: white;
   border-bottom-color: white;
 }
 
-/* сетка из 3 колонок */
 .projects {
   max-width: 1100px;
   margin: 0 auto;
@@ -304,13 +290,11 @@ section {
   color: #ccc;
 }
 
-/* этот класс добавляет JavaScript, чтобы спрятать проект */
 .hide {
   display: none;
 }
 
 
-/* ===== Контакты ===== */
 .contact {
   padding: 80px 20px;
   background-color: #f2f2f2;
@@ -356,13 +340,11 @@ section {
   font-weight: 600;
 }
 
-/* красный цвет для ошибок в форме */
 .error {
   color: #cc0000;
 }
 
 
-/* ===== Подвал ===== */
 .footer {
   padding: 50px 20px;
   background-color: #1a1a1a;
@@ -385,23 +367,17 @@ section {
   font-size: 14px;
 }
 
-
-/* ===== Адаптив ===== */
-
-/* планшет: 2 колонки с проектами */
 @media (max-width: 1000px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* телефон */
 @media (max-width: 800px) {
   .header {
     padding: 0 20px;
   }
 
-  /* показываем бургер, а меню прячем */
   .menu-button {
     display: block;
   }
@@ -418,7 +394,6 @@ section {
     gap: 0;
   }
 
-  /* класс open добавляет JavaScript */
   .menu.open {
     display: flex;
   }
@@ -433,7 +408,6 @@ section {
     border-radius: 0;
   }
 
-  /* на телефоне на главном экране фото гор */
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero.png);
     background-size: cover;
