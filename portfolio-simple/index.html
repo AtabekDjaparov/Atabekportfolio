@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Djaparov Atabek - Portfolio</title>
+
+  <!-- Шрифты с Google Fonts (нужен интернет) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ШАПКА С МЕНЮ -->
+  <header class="header" id="top">
+    <a href="#top" class="logo">Atabek</a>
+
+    <!-- кнопка-бургер, видна только на телефоне -->
+    <button class="menu-button" id="menuButton">&#9776;</button>
+
+    <nav class="menu" id="menu">
+      <a href="#about">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact" class="contact-link">Contact me</a>
+    </nav>
+  </header>
+
+  <!-- ГЛАВНЫЙ ЭКРАН -->
+  <section class="hero">
+    <p class="hero-small">Hi, I am</p>
+    <h1>Djaparov Atabek</h1>
+    <p class="hero-job">Student</p>
+
+    <div class="hero-links">
+      <a href="#portfolio" class="button">My work</a>
+      <a href="#contact" class="button">Contact me</a>
+    </div>
+  </section>
+
+  <!-- ОБО МНЕ -->
+  <section class="about" id="about">
+    <h2 class="section-title">About me</h2>
+
+    <p>My name is Djaparov Atabek. I am a second-year student at Alatoo college.</p>
+    <p>This year we started learning web programming, and this website is my portfolio project. I use HTML, CSS and JavaScript to build it.</p>
+    <p>I also work with Python and Java, I am learning web design, and my English level is advanced.</p>
+  </section>
+
+  <!-- НАВЫКИ -->
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <h3>Using now:</h3>
+    <div class="skill-list">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" alt="HTML5 logo">
+        <p>HTML5</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" alt="CSS3 logo">
+        <p>CSS3</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="Python logo">
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/java/java-original.svg" alt="Java logo">
+        <p>Java</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg" alt="Git logo">
+        <p>Git</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/figma/figma-original.svg" alt="Figma logo">
+        <p>Figma</p>
+      </div>
+    </div>
+
+    <h3>Learning:</h3>
+    <div class="skill-list">
+      <div class="skill">
+        <div class="skill-emoji">&#127912;</div>
+        <p>Web design</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/java/java-original.svg" alt="Java logo">
+        <p>Java</p>
+      </div>
+    </div>
+
+    <h3>Other skills:</h3>
+    <div class="skill-list">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/1x1/gb.svg" alt="UK flag">
+        <p>English (advanced)</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/scratch.svg" alt="Scratch logo">
+        <p>Scratch</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОРТФОЛИО -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-top">
+      <h2 class="section-title">Portfolio</h2>
+    </div>
+
+    <!-- кнопки фильтра. data-filter - какой класс показывать -->
+    <div class="filters">
+      <button class="filter-button active" data-filter="all">ALL</button>
+      <button class="filter-button" data-filter="coded">CODED</button>
+      <button class="filter-button" data-filter="designed">DESIGNED</button>
+    </div>
+
+    <div class="projects">
+      <div class="project coded">
+        <img src="img/project1.png" alt="Portfolio website">
+        <h3>Portfolio website</h3>
+        <p>My first website from the web programming class. Made with HTML, CSS and JavaScript.</p>
+      </div>
+
+      <!-- ЗАМЕНИ карточки ниже на свои проекты (название, описание, картинку) -->
+      <div class="project designed">
+        <img src="img/project2.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Short description of the project.</p>
+      </div>
+
+      <div class="project coded designed">
+        <img src="img/project3.png" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Short description of the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <form id="contactForm" novalidate>
+      <input type="text" id="name" placeholder="Your name *">
+      <input type="email" id="email" placeholder="Your email *">
+      <input type="tel" id="phone" placeholder="Phone number">
+      <textarea id="message" placeholder="Your message *"></textarea>
+      <button type="submit" class="button">Send</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <a href="#top">&#8593; Back to top</a>
+
+    <!-- ВСТАВЬ свои ссылки вместо # -->
+    <div class="footer-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Email</a>
+    </div>
+
+    <p>&copy; 2026 Djaparov Atabek. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

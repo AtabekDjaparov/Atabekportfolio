@@ -1,0 +1,460 @@
+/* ===== Общие стили ===== */
+
+/* убираем стандартные отступы у всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* чтобы шапка не закрывала заголовок, когда нажимаем на ссылку меню */
+section {
+  scroll-margin-top: 70px;
+}
+
+/* рамка вокруг заголовков разделов */
+.section-title {
+  display: inline-block;
+  border: 8px solid #000;
+  padding: 25px 50px;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+/* кнопка */
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* ===== Шапка ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  color: #aaa;
+}
+
+.menu .contact-link {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+}
+
+.menu .contact-link:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* на компьютере кнопку-бургер не показываем */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+/* ===== Главный экран ===== */
+.hero {
+  height: 100vh;
+  min-height: 500px;
+  padding: 70px 20px 0;
+  background: linear-gradient(#111, #3a3a3a);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-small {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+}
+
+.hero h1 {
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+}
+
+.hero-job {
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #bbb;
+}
+
+.hero-links {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* ===== Обо мне ===== */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+
+/* ===== Навыки ===== */
+.skills {
+  padding: 80px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.skills h3 {
+  margin: 50px 0 25px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.skill-list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skill {
+  width: 130px;
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.skill-emoji {
+  height: 80px;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+
+/* ===== Портфолио ===== */
+.portfolio {
+  padding-bottom: 80px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* полоса с горами сверху */
+.portfolio-top {
+  height: 280px;
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-top .section-title {
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  border-color: black;
+}
+
+.filters {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-button {
+  padding: 12px 30px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #555;
+  color: #888;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  color: white;
+}
+
+/* активная кнопка фильтра */
+.filter-button.active {
+  color: white;
+  border-bottom-color: white;
+}
+
+/* сетка из 3 колонок */
+.projects {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project {
+  background-color: #2a2a2a;
+}
+
+.project img {
+  display: block;
+  width: 100%;
+}
+
+.project h3 {
+  margin: 15px 15px 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project p {
+  margin: 0 15px 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* этот класс добавляет JavaScript, чтобы спрятать проект */
+.hide {
+  display: none;
+}
+
+
+/* ===== Контакты ===== */
+.contact {
+  padding: 80px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 14px;
+  border: 2px solid #000;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.contact textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact .button {
+  align-self: center;
+  border-color: #000;
+  color: #000;
+}
+
+.contact .button:hover {
+  background-color: #000;
+  color: white;
+}
+
+#formMessage {
+  min-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+/* красный цвет для ошибок в форме */
+.error {
+  color: #cc0000;
+}
+
+
+/* ===== Подвал ===== */
+.footer {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+.footer-links {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+
+/* ===== Адаптив ===== */
+
+/* планшет: 2 колонки с проектами */
+@media (max-width: 1000px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* телефон */
+@media (max-width: 800px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  /* показываем бургер, а меню прячем */
+  .menu-button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #111;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* класс open добавляет JavaScript */
+  .menu.open {
+    display: flex;
+  }
+
+  .menu a {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .menu .contact-link {
+    border-radius: 0;
+  }
+
+  /* на телефоне на главном экране фото гор */
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .section-title {
+    padding: 18px 30px;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .portfolio-top {
+    height: 200px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
