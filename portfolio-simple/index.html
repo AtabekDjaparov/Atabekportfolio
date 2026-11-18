@@ -15,24 +15,35 @@
 <body>
 
 
+  <script src="script.js" defer></script>
+  <script src="app.js" defer></script>
   <header class="header" id="top">
-    <a href="#top" class="logo">Atabek</a>
+    <a href="#hero" class="logo">Atabek</a>
 
 
-    <button class="menu-button" id="menuButton">&#9776;</button>
-
-    <nav class="menu" id="menu">
-      <a href="#about">About me</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact" class="contact-link">Contact me</a>
-    </nav>
+  <div class="brand">Моё портфолио</div>
+        <nav>
+          <div class="menu" id="menu">
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Проекты</a>
+            <a href="#contact">Контакты</a>
+          </div>
+          <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню">
+            <span class="hamburger-bars" aria-hidden="true">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </span>
+          </button>
+        </nav>
+        <button class="btn" id="theme-toggle">Тёмная тема</button>
   </header>
 
 
-  <section class="hero">
+  <section class="hero" id = "hero">
     <p class="hero-small">Hi, I am</p>
-    <h1>Djaparov Atabek</h1>
+    <h1 id = "greeting">Djaparov Atabek</h1>
+    <button id="askName">Представиться</button>
     <p class="hero-job">Student</p>
 
     <div class="hero-links">
